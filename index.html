@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #37474f;
+        }
+        #world {
+            padding-bottom: 10px;
+        }
+
+        table {
+            background-color: whitesmoke;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid darkgray;
+            width: 15px;
+            height: 15px;
+        }
+
+        td.dead {
+            background-color: #102027;
+        }
+
+        td.alive {
+            background-color: #eceff1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="world"></div>
+    <div>
+        <Input type='button' id='btnstartstop' value='Start Reproducing' onclick='startStopGol();' />
+        <Input type='button' id='btnreset' value='Reset World' onclick='resetWorld();' />
+        <Input type='button' id='prevGen' value='previous gen' onclick='setPrevGen();' />
+        <!--<Input type='button' id='nextGen' value='next gen' onclick='setNextGen();' />-->
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
